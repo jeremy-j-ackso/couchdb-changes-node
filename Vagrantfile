@@ -69,5 +69,6 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
-  config.vm.provision "shell", path: "./vagrant-scripts/config.sh"
+  config.vm.provision "shell", path: "./vagrant-scripts/config-couchdb.sh"
+  config.vm.provision "shell", path: "./vagrant-scripts/config-postgres.sh"
 end
