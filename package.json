@@ -1,0 +1,25 @@
+{
+  "name": "couchdb-changes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremy-j-ackso/couchdb-changes-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremy-j-ackso/couchdb-changes-node/issues"
+  },
+  "homepage": "https://github.com/jeremy-j-ackso/couchdb-changes-node#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nano": "^6.4.2",
+    "requests": "^0.2.2",
+    "sequelize": "^4.33.0"
+  }
+}
