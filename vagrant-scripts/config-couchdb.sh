@@ -2,7 +2,7 @@
 echo "deb https://apache.bintray.com/couchdb-deb xenial main" > /etc/apt/sources.list.d/couchdb.list
 
 # Get signing key.
-curl -L https://couchdb.apache.org/repo/bintray-pubkey.asc | apt-key add -
+curl -sL https://couchdb.apache.org/repo/bintray-pubkey.asc | apt-key add -
 
 # Prep debconf for automatic install.
 COUCHDB_PASSWORD=password
