@@ -21,4 +21,4 @@ apt-get update -y -q
 DEBIAN_FRONTEND=noninteractive apt-get install -y -q couchdb
 
 # Create the source database
-curl -sL -X PUT http://localhost:5984/watch_these_changes
+curl -sL -X PUT http://admin:password@localhost:5984/watch_these_changes
