@@ -15,7 +15,7 @@ sudo -u postgres createuser -d -l -s vagrant
 sudo -u postgres createuser -l node_user
 
 # Add the sql database that will be updated.
-createdb updatedDb
+sudo -u postgres createdb updatedDb
 
 # Set up odbc
 odbcinst -i -d -f /usr/share/psqlodbc/odbcinst.ini.template
