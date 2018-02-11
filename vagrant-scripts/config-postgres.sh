@@ -31,6 +31,7 @@ Port = 5432
 ReadOnly = No" > /etc/odbc.ini
 
 sed -i "s/#listen_addresses = 'localhost'/listen_addresses = '*'/" /etc/postgresql/9.6/main/postgresql.conf
+sed -i "88i\host all all 0.0.0.0/0 trust" /etc/postgresql/9.6/main/pg_hba.conf
 
 # Restart so changes take effect.
 systemctl restart postgresql.service
