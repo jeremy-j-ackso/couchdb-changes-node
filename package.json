@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./**/*.js",
+    "push-couch": "node ./couch-only/continuous-push.js",
+    "seed-couch": "node ./couch-only/seed-db.js",
+    "clear-couch": "node ./couch-only/clear-db.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +21,14 @@
   },
   "homepage": "https://github.com/jeremy-j-ackso/couchdb-changes-node#readme",
   "dependencies": {
+    "async": "^2.6.0",
     "express": "^4.16.2",
     "nano": "^6.4.2",
     "requests": "^0.2.2",
     "sequelize": "^4.33.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   }
 }
